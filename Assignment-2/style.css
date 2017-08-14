@@ -1,0 +1,155 @@
+#wrapper {
+	margin:0 auto;
+	width:1000px;
+	border-left:1px solid #f0e9eb;
+	border-right:1px solid #f0e9eb;
+}
+
+header {
+	
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background:#072275;
+	font:normal 28px/1.6em Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+
+}
+
+p {
+	margin:0;
+	padding-right:15px;
+	padding-left:10px;
+}
+
+#main-content {
+	margin:0 auto;
+	width:680px;
+	padding:0 30px 30px;
+	float:left;
+}
+
+
+.nav-side {
+	width:300px;
+	margin:0 auto;
+	padding:10px 25px;
+	float:right;
+	
+	
+}
+
+#footer {
+	background:#072275;
+	border-top:1px solid #f0e9eb;
+	padding:10px 15px;
+	clear:both;
+	color:#ffffff;
+}
+
+
+h1 {
+	color:#01103f;
+	margin:0 0 10px;
+	padding-bottom:10px;
+	font:normal 23px Georgia, serif;
+	border-bottom:1px solid #efece7;
+	
+}
+
+.text{
+	color:#FFFFFF;
+	margin-left:720px;
+	margin-right:20px;
+	padding-bottom:8px;
+	padding-top:8px;
+	font:bold 16px Arial, Helvetica, sans-serif;
+	background:#072275;
+	margin-bottom:10px;
+}
+.navigate{
+	color:#000000;
+	margin-left:720px;
+	padding-bottom:6px;
+	margin-right:20px;
+	padding-top:6px;
+	font:bold 14px Arial, Helvetica, sans-serif;
+	background:#e2e9ff;
+	border-bottom:2px solid #ffffff;
+}
+
+h2 {
+	color:#000000;
+	margin:20px 0 10px;
+	padding-bottom:7px;
+	font:normal 16px Georgia, serif;
+	border-bottom:1px solid #efece7;
+}
+
+.li1{
+	border-bottom:1px solid #efece7;
+}
+
+.ul1 {
+	color:#FFFFFF;
+	margin-left:720px;
+	padding-bottom:8px;
+	padding-top:8px;
+	font:bold 16px Arial, Helvetica, sans-serif;
+	background:#072275;
+}
+
+article {
+	background:#eff3ff;
+	border:1px solid #f0e9eb;
+	padding-left:5px;
+	padding-bottom:5px;
+	padding-right:5px:
+}
+.update{
+	
+	background:#89a2ed;
+	font:normal 14px/1.6em Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	padding-right:10px;
+	text-align:right;
+	margin: 0 10px:
+	
+	
+}
+.img-left {
+    float: left;
+    margin: 5px 10px 5px 5px;
+}
+.img-right {
+    float: right;
+    margin: 5px 10px 10px 10px;
+}
+#nav {
+	background:#06a;
+	padding:10px 20px;
+	text-align:right;
+	color:#f6dde3;
+	margin-bottom:20px;
+}
+
+#nav a {
+	margin: 0 10px;
+}
+
+#nav a:visited, #nav a:link {
+	text-decoration:none;
+	color:#f6dde3;
+}
+
+#nav a:hover {
+	text-decoration:underline;
+	color:#f6dde3;
+}
+
+#logo {
+	margin-bottom:20px;
+	font:normal 18px Georgia, serif;
+	color:#fa7393;
+}
+
