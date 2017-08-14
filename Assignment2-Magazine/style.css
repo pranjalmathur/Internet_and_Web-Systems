@@ -21,6 +21,11 @@ p {
 	padding-right:15px;
 	padding-left:10px;
 }
+.p1 {
+	margin:0;
+	padding-right:5px;
+	padding-left:5px;
+}
 
 #main-content {
 	margin:0 auto;
@@ -166,6 +171,7 @@ article {
 	float:left;
 	height: 300px;
     width: 30%;
+	margin-left:5px;
 	
 }
 
@@ -180,7 +186,7 @@ article {
 	background:#ffffff;
 	font:normal 12px/1.6em Arial, Helvetica, sans-serif;
 	color:#000000;
-	margin-left: 300px;
+	margin-left: 307px;
 	height: 300px;
     width: 30%;
 	margin-bottom:20px;
@@ -192,19 +198,21 @@ article {
 	background:#ffffff;
 	font:normal 12px/1.6em Arial, Helvetica, sans-serif;
 	color:#000000;
-	margin-right: 0px;
-	height: 300px;
-    width: 30%;
-	margin-bottom:10px;
-}
-.main-box{
-	
-	
-	font:normal 12px/1.6em Arial, Helvetica, sans-serif;
-	color:#000000;
 	float:right;
 	height: 300px;
-    width: 100%;
-	
+    width: 30%;
+	margin-bottom:20px;
+	margin-right:8px;
 }
-
+.box-sub{
+	
+	margin-top:10px;
+	background:#eff3ff;
+	font:normal 12px/1.6em Arial, Helvetica, sans-serif;
+	color:#000000;
+	height: 80px;
+    width: 90%;
+	margin-bottom:10px;
+	margin-right:5px;
+	margin-left:7px;
+}
