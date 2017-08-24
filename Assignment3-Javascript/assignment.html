@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<!--  Pranjal Mathur 1410110296-->
+<!--  Internet and Web Systems Assignment 3-->
+<html>
+<body>
+
+  <button onclick="myFunction()">Rectangle</button>
+  <button onclick="myFunction2()">Circle</button>
+  <button onclick="myFunction3()">Triangle</button>
+  <button onclick="myFunction4()">Hexagon</button>
+  <br>
+
+  <canvas id="myCanvas" width="200" height="200" style="border:1px solid #d3d3d3;">
+  </canvas>
+  <br>
+  <div id="form1" style="display:none;">
+    <form id="rect">
+      Length:<br>
+      <input type="number" id="len">
+      <br>
+      Breadth:<br>
+      <input type="number" id="bre">
+      <br><br>
+      <input type="submit" value="Submit" onclick="rect()">
+    </form>
+  </div>
+  <div id="form2" style="display:none;">
+    <form id="circle">
+      Radius:<br>
+      <input type="text" id="rad">
+      <br>
+      <input type="submit" value="Submit" onclick="circ()">
+    </form>
+  </div>
+  <div id="form3" style="display:none;">
+    <form id="triangle">
+      Side1:<br>
+      <input type="number" id="s1">
+      <br>
+      Side2:<br>
+      <input type="number" id="s2"><br>
+      Side3:<br>
+      <input type="number" id="s3">
+      <br><br>
+      <input type="submit" value="Submit" onclick="tri()">
+    </form>
+  </div>
+  <div id="form4" style="display:none;">
+    <form id="circle">
+      Side:<br>
+      <input type="text" id="side">
+      <br>
+      <input type="submit" value="Submit" onclick="hex()">
+    </form>
+  </div>
+  <script>
+  function myFunction() {
+    document.getElementById("form2").style.display = "none";
+    document.getElementById("form3").style.display = "none";
+    document.getElementById("form4").style.display = "none";
+    document.getElementById("form1").style.display = "block";
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.clearRect(0, 0, 200, 200);
+    ctx.beginPath();
+
+    ctx.rect(20, 20, 150, 100);
+    ctx.stroke();
+  }
+  function myFunction2(){
+    document.getElementById("form1").style.display = "none";
+    document.getElementById("form4").style.display = "none";
+    document.getElementById("form3").style.display = "none";
+    document.getElementById("form2").style.display = "block";
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    ctx.clearRect(0, 0, 200, 200);
+
+    ctx.beginPath();
+    ctx.arc(100,75,50,0,2*Math.PI);
+    ctx.stroke();
+  }
+  function myFunction3(){
+    document.getElementById("form1").style.display = "none";
+    document.getElementById("form4").style.display = "none";
+    document.getElementById("form2").style.display = "none";
+    document.getElementById("form3").style.display = "block";
+    var canvasElement = document.querySelector("#myCanvas");
+    var context = canvasElement.getContext("2d");
+    context.clearRect(0, 0, 200, 200);
+    // the triangle
+    context.beginPath();
+    context.moveTo(30, 30);
+    context.lineTo(30, 90);
+    context.lineTo(90, 90);
+    context.closePath();
+
+    // the outline
+    context.lineWidth = 2;
+    context.strokeStyle = '#666666';
+    context.stroke();
+  }
+
+  function myFunction4(){
+    document.getElementById("form1").style.display = "none";
+    document.getElementById("form2").style.display = "none";
+    document.getElementById("form3").style.display = "none";
+    document.getElementById("form4").style.display = "block";
+
+    var c2 = document.getElementById('myCanvas').getContext('2d');
+    c2.clearRect(0, 0, 200, 200);
+    c2.beginPath();
+    c2.moveTo(50, 50);
+    c2.lineTo(110, 80);
+    c2.lineTo(110, 140);
+    c2.lineTo(50, 170);
+    c2.lineTo(0, 140);
+    c2.lineTo(0, 80);
+
+    c2.closePath();
+    c2.fill();
+
+  }
+
+  function rect(){
+    var br=document.getElementById('bre').value;
+    var len=document.getElementById('len').value;
+    var area=len*br;
+    var par=2*(parseInt(br)+parseInt(len));
+    alert("Area of the Rectangle=" +area)
+    alert("Parameter of the Rectangle=" +par)
+  }
+
+  function circ(){
+    var br=document.getElementById('rad').value;
+
+    var area=br*3.14*br;
+    var par=2*3.14*br
+    alert("Area of the Circle=" +area)
+    alert("Parameter of the Circle=" +par)
+  }
+  function tri(){
+    var a=parseInt(document.getElementById('s1').value);
+    var b=parseInt(document.getElementById('s2').value);
+    var c=parseInt(document.getElementById('s3').value);
+    var p=parseInt((parseInt(a)+parseInt(b)+parseInt(c))/2);
+
+    var area2=parseInt((p*(p-a)*(p-b)*(p-c)));
+    var area=Math.sqrt(area2);
+    var par=a+b+c;
+    alert("Area of the Triangle=" +area)
+    alert("Parameter of the Triangle=" +par)
+  }
+
+  function hex(){
+    var br=document.getElementById('side').value;
+
+    var area=2.6*br*br;
+    var par=6*br;
+    alert("Area of the Hexagon=" +area)
+    alert("Parameter of the Hexagon=" +par)
+  }
+  </script>
+
+</body>
+</html>
