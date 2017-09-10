@@ -6,7 +6,9 @@
 # Objectives
 1.	Get the basic understanding of the working of Internet
 2.	Understand the basic protocols such as HTTP, DDP and REST.
+* Basics of HTTP/HTTPS, key exchange, etc.
 3.	Learn front-end designing.
+* HTML stmantic tags, CSS and basic properties, Javascript.
 4.	Learn client-side scripting.
 5.	Learn server-side scripting.
 6.	Handling and maintaining databases over the internet.
