@@ -2,6 +2,7 @@
 * Resume [link](https://pranjalmathur.github.io/Internet_and_Web-Systems/Assignment1-Resume/Resume.html)
 * Magazine [link](https://pranjalmathur.github.io/Internet_and_Web-Systems/Assignment2-Magazine/Magazine.html)
 * Quora [link](https://pranjalmathur.github.io/Internet_and_Web-Systems/LabSheet1-QuoraAbst/Quora.html)
+* CSS Properties Assignment [link](https://pranjalmathur.github.io/Internet_and_Web-Systems/CSS_Properties/CSS.html)
 
 # Objectives
 1.	Get the basic understanding of the working of Internet
