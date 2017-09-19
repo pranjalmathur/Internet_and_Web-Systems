@@ -4,7 +4,7 @@
 * Quora [link](https://pranjalmathur.github.io/Internet_and_Web-Systems/LabSheet1-QuoraAbst/Quora.html)
 * CSS Properties Assignment [link](https://pranjalmathur.github.io/Internet_and_Web-Systems/CSS_Properties/CSS.html)
 * Bootstrap Mart [link](https://pranjalmathur.github.io/Internet_and_Web-Systems/Assignment4-Bootstrap/file.html)
-* Funtional Calander [link](https://pranjalmathur.github.io/Internet_and_Web-Systems/ClassAssignment/funtional-calander.html)
+* Funtional Calander [link](https://pranjalmathur.github.io/Internet_and_Web-Systems/ClassAssignment/functional-calander.html)
 
 # Objectives
 1.	Get the basic understanding of the working of Internet
