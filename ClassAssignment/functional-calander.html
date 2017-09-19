@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4" >
+  <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" id="1" onclick="update(this.id)">User1</a>
+    <a class="dropdown-item" id="2" onclick="update(this.id)">User2</a>
+    <a class="dropdown-item" id="3" onclick="update(this.id)">User3</a>
+    <a class="dropdown-item" id="4" onclick="update(this.id)">User4</a>
+    <a class="dropdown-item" id="5" onclick="update(this.id)">User5</a>
+  </div>
+</div>
+</div>
+  <div class="col-sm-8" id="User" >
+  </div>
+</div>
+</div>
+  <table class="table">
+  <thead class="thead-inverse">
+    <tr>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="days">
+
+
+    </tr>
+  </tbody>
+</table>
+</div>
+</body>
+<script>
+var events=[["User1Event1","User1Event2","User1Event3","User1Event4","User1Event5","User1Event6"],
+["User2Event1","User2Event2","User2Event3","User2Event4","User2Event5","User2Event6"],
+["User3Event1","User3Event2","User3Event3","User3Event4","User3Event5","User3Event6"],
+["User4Event1","User4Event2","User4Event3","User4Event4","User4Event5","User4Event6"],
+["User5Event1","User5Event2","User5Event3","User5Event4","User5Event5","User5Event6"]]
+
+
+function update(id){
+   document.getElementById("User").innerHTML="User"+id;
+  var list = document.getElementById("days");
+   while (list.hasChildNodes()) {
+       list.removeChild(list.firstChild);
+   }
+     events[parseInt(id)-1].map(function add(cur,ind){
+       document.getElementById("days").innerHTML+="<td>"+cur+"</td>"
+     });
+}
+</script>
+</html>
