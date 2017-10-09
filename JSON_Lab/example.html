@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+  var students={"Pranjal":{"SNU_ID":"1410110296","Marks":"98","CGPA":""},
+                "Vishal":{"SNU_ID":"1410110226","Marks":"93","CGPA":""},
+                "Kanika":{"SNU_ID":"1410110000","Marks":"78","CGPA":""}
+                }
+
+
+  function myFunction()
+  {
+    var name=document.getElementById("mySelect").value;
+    document.getElementById("name").innerHTML=name;
+    document.getElementById("SNU_ID").innerHTML=students[name].SNU_ID;
+    document.getElementById("Total").innerHTML=students[name].Marks;
+    document.getElementById("CGPA").innerHTML=parseInt(students[name].Marks)/10;
+    students[name].CGPA=parseInt(students[name].Marks)/10;
+
+  }
+  </script>
+</head>
+<body>
+  <form>
+  Select name:
+  <select id="mySelect">
+    <option value="Pranjal">Pranjal</option>
+    <option value="Vishal">Vishal</option>
+    <option value="Kanika">Kanika</option>
+  </select>
+  </form>
+
+  <p>Click the button to change the selected fruit to banana.</p>
+
+  <button type="button" onclick="myFunction()">Try it</button>
+<div id="name"></div>
+<div id="SNU_ID"></div>
+<div id="Total"></div>
+<div id="CGPA"></div>
+</body>
+
+</html>
