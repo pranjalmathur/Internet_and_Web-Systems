@@ -5,6 +5,7 @@
 * CSS Properties Assignment [link](https://pranjalmathur.github.io/Internet_and_Web-Systems/CSS_Properties/CSS.html)
 * Bootstrap Mart [link](https://pranjalmathur.github.io/Internet_and_Web-Systems/Assignment4-Bootstrap/file.html)
 * Funtional Calander [link](https://pranjalmathur.github.io/Internet_and_Web-Systems/ClassAssignment/functional-calander.html)
+* JSON Objects (Students) [link](https://pranjalmathur.github.io/Internet_and_Web-Systems/JSON_Lab/example.html)
 
 # Objectives
 1.	Get the basic understanding of the working of Internet
