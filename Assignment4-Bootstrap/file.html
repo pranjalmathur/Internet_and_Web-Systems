@@ -13,20 +13,6 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Bootstrap CSS -->
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <style>
-    /* Remove the navbar's default rounded borders and increase the bottom margin */
-
-    /* Remove the jumbotron's default bottom margin */
-     .jumbotron {
-      margin-bottom: 0;
-    }
-
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-  </style>
 </head>
 <body>
 
@@ -47,6 +33,14 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Policies</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" id="Add Category" data-toggle="modal" data-target="#exampleModal3">Add New</a>
+          <script>
+          $('#myModal').on('shown.bs.modal', function () {
+$('#myInput').focus()
+})
+</script>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
           <li><i id="toq">0</i><i class="material-icons" style="margin-right:10px;" data-toggle="modal" data-target="#exampleModal">add_shopping_cart</i>
@@ -65,19 +59,19 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto" id="nnn">
           <li class="nav-item active">
             <a class="nav-link">Recommended <span class="sr-only">(current)</span></a>
           </li>
 
          <li class="nav-item">
-              <a class="nav-link" id="Fashion" onclick="changeitem(this.id)">Furniture </a>
+              <a class="nav-link" id="Furniture" onclick="changeitem(this.id)">Furniture </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="Furniture" onclick="changeitem(this.id)">Laptops <span class="sr-only">(current)</span></a>
+              <a class="nav-link" id="Laptops" onclick="changeitem(this.id)">Laptops <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"id="Fruits" onclick="changeitem(this.id)">Others <span class="sr-only">(current)</span></a>
+              <a class="nav-link"id="Others" onclick="changeitem(this.id)">Others <span class="sr-only">(current)</span></a>
             </li>
 
         </ul>
@@ -400,9 +394,13 @@
 </div>
 </div>
 <br><br>
-
-<footer class="container-fluid text-center">
-  <p>Online Store Copyright</p>
+<div id="usercreated" style="display:none">
+  <div class="container">
+    <div class="row" id="userrow">
+  </div>
+</div></div>
+<footer class="container-fluid text-center" style="background-color:black; width:100%; height:10%;">
+  <p style="color:white">Online Store Copyright</p>
 </footer>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -440,7 +438,94 @@
     </div>
   </div>
 </div>
+
+
+
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel3">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="newf">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Category</label>
+    <input class="form-control" id="uu" aria-describedby="emailHelp" placeholder="Enter name">
+
+  </div>
+  <button class="btn btn-primary" id="jj">Submit</button>
+</form>
+<form class=="form-group" id="names"></form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="store()">Close</button>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
+var categories=[]
+var items=[]
+var i=0;
+var j=0;
+$("#jj").on("click", function(e) {
+    e.preventDefault();
+    items.push([])
+    var x=document.getElementById("uu").value;
+    categories.push(x)
+    var y=document.getElementById("nnn");
+    y.innerHTML+="<li class='nav-item'><a class='nav-link' id="+x+" onclick='fillitems(this.id)'>"+x+"</a></li>"
+    // the rest of your code ...
+    document.getElementById("names").innerHTML+= "<input class='form-control' aria-describedby='emailHelp' id="+i+"><i class='material-icons' onclick='add()'>add_circle</i>"
+
+
+})
+
+function add(){
+
+  items[i][j]=document.getElementById(i+j).value
+  j++;
+  var k=parseInt(i)+parseInt(j);
+    document.getElementById("names").innerHTML= "<input class='form-control' aria-describedby='emailHelp' id="+k+"><i class='material-icons' style='float:right' onclick='add()'>add_circle</i>"
+
+}
+function store(){
+  document.getElementById("names").innerHTML="";
+  i++;
+  j=0;
+
+
+}
+</script>
+<script>
+function fillitems(x){
+   document.getElementById('head').innerHTML=x;
+  document.getElementById("usercreated").style.display="none";
+  document.getElementById('fas').style.display = "none";
+  document.getElementById('fur').style.display = "none";
+  document.getElementById('fru').style.display = "none";
+  document.getElementById('rec').style.display = "none";
+
+  document.getElementById("userrow").innerHTML="";
+  var u=categories.indexOf(x);
+  items[parseInt(u)].map(function(index, item){
+    document.getElementById("userrow").innerHTML+= "<div class='col-sm-4' ><div class='panel panel-primary' style='border-left: 5px solid;'><div class='panel-heading' style='background-color:#24AAD1; color:white; padding-left:5px;'><b>"+index+"</b></div><div class='panel-body'><img src='https://cnet4.cbsistatic.com/img/asgAV1s1xgt0K0TsDnwdAt0KF7g=/1070x602/2017/06/07/920dbc85-d061-4a6d-a49e-4119fd38583a/microsoft-surface-book-pro-001.jpg' class='img-responsive' style='width:100%' alt='Image' data-toggle='popover' data-placement='top' data-content='Price: Rs.x | GST: 18%'></div><div class='panel-footer' style='background-color: #e8e8e8;padding-left:5px;'>Buy 50 mobiles and get a gift cad<i class='material-icons' style='float:right; onclick='myFunction(this.id, document.getElementsByName('textbox')[23].value)'>add_circle</i><input name='textbox1' style='border-radius:50px; border-color:blue;float:right;height:21px;width:21px;margin-top:2px;padding-left:4px;'value=1 min=1 max=5></input></div></div><div><br>"
+  }
+  )
+
+document.getElementById("usercreated").style.display="block"
+}
+</script>
+<script>
+
 var i=0;
 var sum=0;
 var quantity=0;
@@ -471,22 +556,27 @@ cell3.innerHTML= id;
     document.getElementById("net").innerHTML="Rs. "+sum;
   }
 
+function addcat(){
 
+}
 function changeitem(name) {
    document.getElementById('head').innerHTML=name;
   if(name=="Furniture"){
-   document.getElementById('fur').style.display = "block";
-   document.getElementById('fas').style.display = "none";
+    document.getElementById("usercreated").style.display="none";
+   document.getElementById('fas').style.display = "block";
+   document.getElementById('fur').style.display = "none";
    document.getElementById('fru').style.display = "none";
    document.getElementById('rec').style.display = "none";
  }
-  if(name=="Fashion"){
-    document.getElementById('fas').style.display = "block";
+  if(name=="Laptops"){
+      document.getElementById("usercreated").style.display="none";
+    document.getElementById('fur').style.display = "block";
+    document.getElementById('fas').style.display = "none";
     document.getElementById('fru').style.display = "none";
-    document.getElementById('fur').style.display = "none";
     document.getElementById('rec').style.display = "none";
 }
-    if(name=="Fruits"){
+    if(name=="Others"){
+        document.getElementById("usercreated").style.display="none";
       document.getElementById('fru').style.display = "block";
       document.getElementById('fas').style.display = "none";
       document.getElementById('fur').style.display = "none";
@@ -494,7 +584,9 @@ function changeitem(name) {
 }
 }
 
-
+function on(){
+  document.getElementById("new").style.display="block";
+}
 $(function () {
   $('[data-toggle="popover"]').popover()
 })
