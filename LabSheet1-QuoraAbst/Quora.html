@@ -1,0 +1,420 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>NEWS</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+       <link href="w3css.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+    <div id="wrapper">
+    <header>
+        <strong>QPuora Abstract</strong>
+        <span style="font-size:15px;cursor:pointer; float:right; margin-right:10px;" onclick="openNav()">My Account</span>
+    	</header>
+    		<div id="nav"><a href="index.html">Home</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a> | <a href="#">Share Ideas</a> | <a href="#">Contribute</a>
+        <span style="margin-left:645px; font:bold 20px Arial, Helvetica, sans-serif;"onclick="this()"><strong>Q</strong></span><input type="text" style="float: right; width: 20%; height:25px; margin-top:0px;"></div>
+        <div id="mySidenav" class="sidenav">
+          <div class="card">
+    <img src="DSC_0001.jpg" style="width:100%">
+    <p style="color:white;text-align:center;background-color:grey;">Pranjal Mathur</p>
+        <p style="color:white;text-align:center;background-color:grey;">Computer Science</p>
+
+  <button style="width:100%; background-color:red; border:none;">Signout</button>
+  <button style="width:100%; background-color:green; border:none;">Personalize</button>
+  <button class="aleft1" onclick="document.getElementById('id02').style.display='block'">Add new topics</button>
+  </div>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  </div>
+  <div id="mySidenav2" class="sidenav">
+    <form>
+      <textarea id="textarea_qs">Some text...</textarea>
+      <button class="ask">Post Question</button>
+    </form>
+    <p style="color:white; text-align: center; padding-top:7px"> My Question</p>
+    <div style="color:white">
+    <hr>
+    <div style="background-color:#8F91A2; height:40px; width:100%; padding:0px 5px 0px 5px; font-size:12px;margin-bottom:5px; margin-left:5px;">  My first question blah blah and blah, you won't understand. Bye </div>
+  <div style="background-color:#8F91A2; height:40px; width:100%; padding:0px 5px 0px 5px; font-size:12px;margin-bottom:5px; margin-left:5px;">  My first question blah blah and blah, you won't understand. Bye </div><div style="background-color:#8F91A2; height:40px; width:100%; padding:0px 5px 0px 5px; font-size:12px;margin-bottom:5px; margin-left:5px;">  My first question blah blah and blah, you won't understand. Bye </div>
+  <div style="background-color:#8F91A2; height:40px; width:100%; padding:0px 5px 0px 5px; font-size:12px;margin-bottom:5px; margin-left:5px;">  My first question blah blah and blah, you won't understand. Bye </div>
+
+
+  </div>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+  </div>
+
+        <div class="break"></div>
+    <nav id="leftnav">
+        <p style="background-color:green;"><h5 style="background-color:#52B788; padding-left:32%; color: white;"><b>Start here</b></h5></p>
+      <button class="aleft">Trending Stories</button>
+      <button class="aleft">Bookmarked Questions</button>
+      <button class="aleft">New in the list</button>
+      <button class="aleft">Friends' Activity</button>
+      <br>
+      <p style="background-color:green;"><h5 style="background-color:#52B788; padding-left:32%; color: white;"><b>Favourites</b></h5></p>
+
+        <button class="aleft" type="submit" onclick="dis(this.id)" id="Trending Stories">Travelling</button>
+        <button class="aleft" type="submit" onclick="dis(this.id)"id="Food">Food</button>
+        <button class="aleft" type="submit" onclick="dis(this.id)"id="Networking">Networking</button>
+        <button class="aleft" type="submit" onclick="dis(this.id)"id="Artificial Intelligence">Artificial Intelligence</button>
+        <button class="aleft" type="submit" onclick="dis(this.id)"id="Forbes Hotlist">Forbes Hotlist</button>
+        <button class="aleft" type="submit" onclick="dis(this.id)"id="Bollywood">Bollywood</button>
+        <button class="aleft" type="submit" onclick="dis(this.id)"id="Shiv Nadar University">Shiv Nadar University</button>
+        <button class="aleft" type="submit" onclick="dis(this.id)"id="Web Designing">Web Designing</button>
+        <div>
+  <button onclick="myFunctions()" class="dropbtn">Dropdown</button>
+    <div id="myDropdown" class="dropdown-content">
+      <ul id="list">
+        <li>1
+        <li>2
+          <li>3
+      </ul>
+    </div>
+  </div>
+
+        <br><br>
+
+    </nav>
+    <br>
+    <nav class="rightnav">
+      <button class="ask" onclick="openNav2()">Ask a Question</button><br>
+  <br>
+      <nav class="rightnav_box">
+        <p style="background-color:#293B59; color: white; padding: 5px 5px 5px 5px; font:bold 14px Arial, Helvetica, sans-serif;" onclick="document.getElementById('id01').style.display='block'">Notifications</p>
+        <p id="p_side">Pranjal Mathur upvoted your answer  ....</p>
+
+        <hr>
+        <p id="p_side">Pranjal Mathur upvoted your answer on ....</p>
+        <hr>
+        <p id="p_side">Pranjal Mathur upvoted your answer on ....</p>
+        <hr>
+        <p id="p_side">Pranjal Mathur upvoted your answer on ....</p>
+  <hr>
+      </nav>
+      <br>
+      <nav class="rightnav_box">
+        <p style="background-color:#293B59; color: white; padding: 5px 5px 5px 5px; font:bold 14px Arial, Helvetica, sans-serif;" onclick="document.getElementById('id01').style.display='block'">Answer Requests</p>
+
+        <p id="p_side">Pranjal Mathur upvoted your answer on ....</p>
+        <hr>
+        <p id="p_side">Pranjal Mathur upvoted your answer on ....</p>
+        <hr>
+        <p id="p_side">Pranjal Mathur upvoted your answer on ....</p>
+        <hr>
+        <p id="p_side">Pranjal Mathur upvoted your answer on ....</p>
+        <hr>
+
+      </nav>
+  <br>
+      <nav class="rightnav_box">
+        <p style="background-color:#293B59; color: white; padding: 5px 5px 5px 5px; font:bold 14px Arial, Helvetica, sans-serif;"onclick="document.getElementById('id01').style.display='block'">Quora Direct</p>
+        <p id="p_side">Pranjal Mathur upvoted your answer on Travelling and sales man ....</p>
+        <hr>
+        <p id="p_side">Pranjal Mathur upvoted your answer on ....</p>
+        <hr>
+        <p id="p_side">Pranjal Mathur upvoted your answer on ....</p>
+        <hr>
+        <p id="p_side">Pranjal Mathur upvoted your answer on ....</p>
+        <hr>
+        <p id="p_side">Pranjal Mathur upvoted your answer on ....</p>
+        <hr>
+        <p id="p_side">Pranjal Mathur upvoted your answer on ....</p>
+      </nav>
+    </nav>
+  <div style="position: relative">
+    <p class="contenthead" id="heading">Travelleing</p>
+    <div class="chiparea">
+    <div class="chip">
+      John Doe
+    </div>  <div class="chip">
+        John Doe
+      </div>  <div class="chip">
+          John Doe
+        </div>
+      </div>
+    </div>
+  </div>
+
+    	<section id="main-content" style="margin-top:40px;">
+
+        <article class="shad">
+          <header class="cardhead">Can you share your horrible train journey experiences in India? </header>
+          <article class="cardbody">Not horrible, but kind of funnyA man in his late 40s, was sitting without a ticket. TTE came and asked for his ticket. Man shouted and fought with TTE, saying his home is nearby railway station so he is entitled to travel without a ticket. After a lot of hassle TTE gave-up on him, and proceeds to check next guy aged may be 18 year old and asked for ticket.
+          </article>
+            <header class="cardbootom"><b>By: Anirudh Kumar: A traveller</b><span id="count" style="margin-right:10px;float:right; padding-left:5px;">223</span>
+              <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Use an element to toggle between a like/dislike icon -->
+  <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+  <img src="Picture1.png" height="12px" width="15px" style="float:right;margin-right:15px;"></img>
+  </header>
+        </article>
+
+          <hr style="width:750px;">
+          <article class="shad">
+            <header class="cardhead">Can you share your horrible train journey experiences in India? </header>
+            <article class="cardbody">Not horrible, but kind of funnyA man in his late 40s, was sitting without a ticket. TTE came and asked for his ticket. Man shouted and fought with TTE, saying his home is nearby railway station so he is entitled to travel without a ticket. After a lot of hassle TTE gave-up on him, and proceeds to check next guy aged may be 18 year old and asked for ticket.
+            </article>
+              <header class="cardbootom"><b>By: Anirudh Kumar: A traveller</b><span id="count" style="margin-right:10px;float:right; padding-left:5px;">223</span>
+                <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Use an element to toggle between a like/dislike icon -->
+  <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+  <img src="Picture1.png" height="12px" width="15px" style="float:right;margin-right:15px;"></img>
+  </header>
+          </article>
+          <hr style="width:750px;">
+          <article class="shad">
+            <header class="cardhead">Can you share your horrible train journey experiences in India? </header>
+            <article class="cardbody">Not horrible, but kind of funnyA man in his late 40s, was sitting without a ticket. TTE came and asked for his ticket. Man shouted and fought with TTE, saying his home is nearby railway station so he is entitled to travel without a ticket. After a lot of hassle TTE gave-up on him, and proceeds to check next guy aged may be 18 year old and asked for ticket.
+            </article>
+              <header class="cardbootom"><b>By: Anirudh Kumar: A traveller</b><span id="count" style="margin-right:10px;float:right; padding-left:5px;">223</span>
+                <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Use an element to toggle between a like/dislike icon -->
+  <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+  <img src="Picture1.png" height="12px" width="15px" style="float:right;margin-right:15px;"></img>
+  </header>
+          </article>
+          <hr style="width:750px;">
+          <article class="shad">
+            <header class="cardhead">Can you share your horrible train journey experiences in India? </header>
+            <article class="cardbody">Not horrible, but kind of funnyA man in his late 40s, was sitting without a ticket. TTE came and asked for his ticket. Man shouted and fought with TTE, saying his home is nearby railway station so he is entitled to travel without a ticket. After a lot of hassle TTE gave-up on him, and proceeds to check next guy aged may be 18 year old and asked for ticket.
+            </article>
+              <header class="cardbootom"><b>By: Anirudh Kumar: A traveller</b><span id="count" style="margin-right:10px;float:right; padding-left:5px;">223</span>
+                <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Use an element to toggle between a like/dislike icon -->
+  <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+  <img src="Picture1.png" height="12px" width="15px" style="float:right;margin-right:15px;"></img>
+  </header>
+          </article>
+          <hr style="width:750px;">
+          <article class="shad">
+            <header class="cardhead">Can you share your horrible train journey experiences in India? </header>
+            <article class="cardbody">Not horrible, but kind of funnyA man in his late 40s, was sitting without a ticket. TTE came and asked for his ticket. Man shouted and fought with TTE, saying his home is nearby railway station so he is entitled to travel without a ticket. After a lot of hassle TTE gave-up on him, and proceeds to check next guy aged may be 18 year old and asked for ticket.
+            </article>
+              <header class="cardbootom"><b>By: Anirudh Kumar: A traveller</b><span id="count" style="margin-right:10px;float:right; padding-left:5px;">223</span>
+                <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Use an element to toggle between a like/dislike icon -->
+  <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+  <img src="Picture1.png" height="12px" width="15px" style="float:right;margin-right:15px;"></img>
+  </header>
+          </article>
+          <hr style="width:750px;">
+          <article class="shad">
+            <header class="cardhead">Can you share your horrible train journey experiences in India? </header>
+            <article class="cardbody">Not horrible, but kind of funnyA man in his late 40s, was sitting without a ticket. TTE came and asked for his ticket. Man shouted and fought with TTE, saying his home is nearby railway station so he is entitled to travel without a ticket. After a lot of hassle TTE gave-up on him, and proceeds to check next guy aged may be 18 year old and asked for ticket.
+            </article>
+              <header class="cardbootom"><b>By: Anirudh Kumar: A traveller</b><span id="count" style="margin-right:10px;float:right; padding-left:5px;">223</span>
+                <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Use an element to toggle between a like/dislike icon -->
+  <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+  <img src="Picture1.png" height="12px" width="15px" style="float:right;margin-right:15px;"></img>
+  </header>
+          </article>
+          <hr style="width:750px;">
+          <article class="shad">
+            <header class="cardhead">Can you share your horrible train journey experiences in India? </header>
+            <article class="cardbody">Not horrible, but kind of funnyA man in his late 40s, was sitting without a ticket. TTE came and asked for his ticket. Man shouted and fought with TTE, saying his home is nearby railway station so he is entitled to travel without a ticket. After a lot of hassle TTE gave-up on him, and proceeds to check next guy aged may be 18 year old and asked for ticket.
+            </article>
+              <header class="cardbootom"><b>By: Anirudh Kumar: A traveller</b><span id="count" style="margin-right:10px;float:right; padding-left:5px;">223</span>
+                <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Use an element to toggle between a like/dislike icon -->
+  <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+  <img src="Picture1.png" height="12px" width="15px" style="float:right;margin-right:15px;"></img>
+  </header>
+          </article>
+          <hr style="width:750px;">
+          <article class="shad">
+            <header class="cardhead">Can you share your horrible train journey experiences in India? </header>
+            <article class="cardbody">Not horrible, but kind of funnyA man in his late 40s, was sitting without a ticket. TTE came and asked for his ticket. Man shouted and fought with TTE, saying his home is nearby railway station so he is entitled to travel without a ticket. After a lot of hassle TTE gave-up on him, and proceeds to check next guy aged may be 18 year old and asked for ticket.
+            </article>
+              <header class="cardbootom"><b>By: Anirudh Kumar: A traveller</b><span id="count" style="margin-right:10px;float:right; padding-left:5px;">223</span>
+                <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Use an element to toggle between a like/dislike icon -->
+  <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+  <img src="Picture1.png" height="12px" width="15px" style="float:right;margin-right:15px;"></img>
+  </header>
+          </article>
+
+            <hr style="width:750px;">
+            <article class="shad">
+              <header class="cardhead">Can you share your horrible train journey experiences in India? </header>
+              <article class="cardbody">Not horrible, but kind of funnyA man in his late 40s, was sitting without a ticket. TTE came and asked for his ticket. Man shouted and fought with TTE, saying his home is nearby railway station so he is entitled to travel without a ticket. After a lot of hassle TTE gave-up on him, and proceeds to check next guy aged may be 18 year old and asked for ticket.
+              </article>
+                <header class="cardbootom"><b>By: Anirudh Kumar: A traveller</header>
+            </article>
+
+              <hr style="width:750px;">
+              <article class="shad">
+                <header class="cardhead">Can you share your horrible train journey experiences in India? </header>
+                <article class="cardbody">Not horrible, but kind of funnyA man in his late 40s, was sitting without a ticket. TTE came and asked for his ticket. Man shouted and fought with TTE, saying his home is nearby railway station so he is entitled to travel without a ticket. After a lot of hassle TTE gave-up on him, and proceeds to check next guy aged may be 18 year old and asked for ticket.
+                </article>
+                  <header class="cardbootom"><b>By: Anirudh Kumar: A traveller</header>
+              </article>
+
+                <hr style="width:750px;">
+                <article class="shad">
+                  <header class="cardhead">Can you share your horrible train journey experiences in India? </header>
+                  <article class="cardbody">Not horrible, but kind of funnyA man in his late 40s, was sitting without a ticket. TTE came and asked for his ticket. Man shouted and fought with TTE, saying his home is nearby railway station so he is entitled to travel without a ticket. After a lot of hassle TTE gave-up on him, and proceeds to check next guy aged may be 18 year old and asked for ticket.
+                  </article>
+                    <header class="cardbootom"><b>By: Anirudh Kumar: A traveller</header>
+                </article>
+
+                  <hr style="width:750px;">
+                  <article class="shad">
+                    <header class="cardhead">Can you share your horrible train journey experiences in India? </header>
+                    <article class="cardbody">Not horrible, but kind of funnyA man in his late 40s, was sitting without a ticket. TTE came and asked for his ticket. Man shouted and fought with TTE, saying his home is nearby railway station so he is entitled to travel without a ticket. After a lot of hassle TTE gave-up on him, and proceeds to check next guy aged may be 18 year old and asked for ticket.
+                    </article>
+                      <header class="cardbootom"><b>By: Anirudh Kumar: A traveller</header>
+                  </article>
+
+                    <hr style="width:750px;">
+    		</article>
+        <br>
+
+        </article>
+    		</section>
+
+    <br><div class="break"></div>
+    	<div id="footer">
+    		Copyright &copy; 2017. All rights reserved.<br/>
+    		Pranjal Sherry Mathur</a>.
+    	</div>
+    </div>
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4">
+          <header class="w3-container w3-light-blue">
+            <span onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Modal Header</h2>
+          </header>
+          <div class="w3-container">
+            <p>Some text..</p>
+            <p>Some text..</p>
+            <p>Some text..</p>
+            <p>Some text..</p>
+            <p>Some text..</p>
+            <p>Some text..</p>
+          </div>
+          <footer class="w3-container w3-blue">
+            <p>Modal Footer</p>
+          </footer>
+        </div>
+      </div>
+      <div id="id02" class="w3-modal">
+          <div class="w3-modal-content w3-card-4">
+            <header class="w3-container w3-grey">
+              <span onclick="document.getElementById('id02').style.display='none'"
+              class="w3-button w3-display-topright">&times;</span>
+              <textarea id="searchtopic" style="width: 100%; height:40px; margin-top:20px; margin-bottom:0px;"></textarea>
+              <button class="aleft" style="height:30px; margin-top:0px; font-size:10px; width:96%" onclick="addlist()" content:"Add"></button>
+            </header>
+            <div class="w3-container">
+              <p>Some text..</p>
+              <p>Some text..</p>
+              <p>Some text..</p>
+              <p>Some text..</p>
+              <p>Some text..</p>
+              <p>Some text..</p>
+            </div>
+            <footer class="w3-container w3-blue">
+              <p>Modal Footer</p>
+            </footer>
+          </div>
+        </div>
+
+    <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunctions() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+  function onTestChange() {
+      var key = window.event.keyCode;
+
+      // If the user has pressed enter
+      if (key === 13) {
+          document.getElementById("txtArea").value = document.getElementById("txtArea").value + "\n*";
+          alert(document.getElementById("txtArea").value);
+          return false;
+      }
+      else {
+          return true;
+      }
+  }
+
+      function addlist(){
+          var li = document.createElement("LI");
+          var input = document.getElementById("searchtopic");
+          li.innerHTML = input.value;
+          input.value = "";
+
+          document.getElementById("list").appendChild(li);
+      }
+
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  function openNav2() {
+      document.getElementById("mySidenav2").style.width = "290px";
+  }
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+  }
+  function closeNav2() {
+      document.getElementById("mySidenav2").style.width = "0";
+    }
+
+  function myFunction(x) {
+
+      x.classList.toggle("fa-thumbs-down");
+
+      var p=document.getElementById("count").innerHTML
+      if(p=="223"){
+        document.getElementById("count").innerHTML="13"
+      }
+      else {
+        document.getElementById("count").innerHTML="223"
+      }
+
+
+  }
+  function dis(id) {
+  alert(id)
+  document.getElementById("heading").innerHTML=id;
+  }
+  </script>
+          </div>
+        </div>
+    </body>
+    </html>
