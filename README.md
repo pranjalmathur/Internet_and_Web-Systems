@@ -7,4 +7,4 @@
 * Funtional Calander [link](https://pranjalmathur.github.io/Internet_and_Web-Systems/ClassAssignment/functional-calander.html)
 * JSON Objects (Students) [link](https://pranjalmathur.github.io/Internet_and_Web-Systems/JSON_Lab/example.html)
 ## Hackathon Repo: [Click here](https://github.com/saketh21v/IWS-Hackathon)
-#### IWS Community Forum link: iws-forum.herokuapp.com
+#### IWS Community Forum link: http://iws-forum.herokuapp.com
