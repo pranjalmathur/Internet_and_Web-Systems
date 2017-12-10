@@ -6,20 +6,5 @@
 * Bootstrap Mart [link](https://pranjalmathur.github.io/Internet_and_Web-Systems/Assignment4-Bootstrap/file.html)
 * Funtional Calander [link](https://pranjalmathur.github.io/Internet_and_Web-Systems/ClassAssignment/functional-calander.html)
 * JSON Objects (Students) [link](https://pranjalmathur.github.io/Internet_and_Web-Systems/JSON_Lab/example.html)
-## Hackathon Repo: [Click here]
-
-# Objectives
-1.	Get the basic understanding of the working of Internet
-2.	Understand the basic protocols such as HTTP, DDP and REST.
-* Basics of HTTP/HTTPS, key exchange, etc.
-3.	Learn front-end designing.
-* HTML stmantic tags, CSS and basic properties, Javascript.
-4.	Learn client-side scripting.
-5.	Learn server-side scripting.
-6.	Handling and maintaining databases over the internet.
-7.	Understanding session management
-8.	Understanding data formats
-9.	Learning the MVC pattern and one framework.
-10.	Understanding web services and APIs
-11.	Understanding network security
-12.	Understanding performance evaluation of the network.
+## Hackathon Repo: [Click here](https://github.com/saketh21v/IWS-Hackathon)
+#### IWS Community Forum link: iws-forum.herokuapp.com
